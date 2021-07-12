@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta charset="UTF-8">
+    <title>My Dice Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:,">
+
+</head>
+
+
+<body>
+    <div class="container">
+
+        <img id="flyingCow" src="images/cow.gif">
+        <h2>Let's Play A Game!</h2>
+
+        <h3 id="message"></h3>
+
+        <div class="players">
+
+            <div id="player1">
+                <p id="p1" class="Player1">-</p>
+                <h1>Score:
+                    <span id="player1Scoreboard">0</span>
+                </h1>
+                <div id="player1Dice" class="dice active">-</div>
+            </div>
+
+            <div id="player2">
+                <p id="p2" class="Player2">-</p>
+                <h1>Score:
+                    <span id="player2Scoreboard">0</span>
+                </h1>
+                <div id="player2Dice" class="dice">-</div>
+            </div>
+        </div>
+
+        <button id="rollBtn" style="display:none">Roll Dice 🎲</button>
+        <button id="resetBtn">Play Again? 🔁</button>
+        <button id="butn" onClick="editNames() ">Enter Player's Name 🖊</button>
+    </div>
+    <script src="js/index.js"></script>
+
+</body>
+
+
+</html>
